@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .ff {
+            width: 100px;
+            height: 200px;
+            background-color: #999;
+            margin: 5px
+        }
+    </style>
+</head>
+
+<body>
+    </div>
+    <button id="b">+</button>
+    <div id="s" style="width: 400px;margin-top:100px;height:500px;margin-left: 200px;background: #eee;">
+        <div class="ff">
+
+        </div>
+    </div>
+    <script src="myScroll.js"></script>
+    <script>
+        new myScroll(document.getElementById('s'));
+        document.getElementById('b').addEventListener('click', function() {
+            var ff = document.createElement('div');
+            ff.classList.add('ff')
+            document.getElementById('s').appendChild(ff);
+        })
+    </script>
+</body>
+
+</html>
